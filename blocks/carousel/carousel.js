@@ -1,4 +1,6 @@
-import { fetchPlaceholders, getMetadata } from '../../scripts/aem.js';
+
+const { fetchPlaceholders, getMetadata } = await import('../../scripts/aem.js');
+
 
 export default async function decorate(block) {
   // Fetch localized placeholders
